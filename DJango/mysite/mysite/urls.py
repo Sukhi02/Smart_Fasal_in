@@ -19,8 +19,12 @@ from polls import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('FTP/', views.FTP_session_view.ftpp), ## Visualize PAGE
-    path('test', views.FTP_session_view.test), ## INDEX PAGE
-    path('FTP1', views.FTP_session_view.ftpp_test), ## INDEX PAGE
+    path('index', views.FTP_session_view.index), ## INDEX PAGE
+    path('visualise', views.FTP_session_view.visual), ## PLOTS PAGE
+        path('ftp_login', views.FTP_session_view.ftp_login), ## FTP PAGE
+        path('plots/', views.FTP_session_view.make_plots), ## plots PAGE
+        path('visualising', views.FTP_session_view.visualising), ## PLOTS PAGE
+
+    #path('results', views.FTP_session_view.results), ## INDEX PAGE
 
     ]

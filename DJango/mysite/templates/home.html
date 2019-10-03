@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +7,7 @@
 body {
 
 
-   background-image:url('C:/Users/Raju/Desktop/download.jpg')
+   background-image:url"{% static "templates/download.jpg" %}"
 
 }
 h1 {
@@ -17,17 +19,23 @@ h1 {
 <body>
 <h1>Click on the below button.</h1>
 
-<form method="get" action="ftp://ftp.smartfasal.in/">
+  <form method="get" action="http://127.0.0.1:8000/visualise">
   <button type="submit">Visualize data of the day </button>
 </form>
 <p>
+
 <form method="get" action="http://smartfasal.in/wp">
   <button type="submit">Analyse the data</button>
 </form>
 <p>
-<form method="get" action="http://smartfasal.in/wp">
-  <button type="submit">Predict the observations </button>
-</form>
+  <form method="get" action="http://smartfasal.in/wp">
+    <button type="submit">Predict the observations </button>
+  </form>
+  <p>
+
+  <form method="get" action="http://127.0.0.1:8000/results">
+    <button type="submit"> FTP test </button>
+    </form>
 
 
 

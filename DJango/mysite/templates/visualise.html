@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+
+
+
+
+
+}
+h1 {
+    color: red;
+    margin-left: 80px;
+}
+</style>
+</head>
+
+<body>
+<h1>Click on the below button.</h1>
+
+<form method="get" action="http://127.0.0.1:8000/ftp_login">
+  <button type="submit">FTP login </button>
+</form>
+<p>
+<form method="get" action="http://127.0.0.1:8000/plots">
+  <button type="submit">make plotting  </button>
+</form>
+<p>
+<form method="get" action="http://127.0.0.1:8000/visualising">
+  <button type="submit">Plots of the day </button>
+</form>
+
+</body>
+</html>
